@@ -1,13 +1,3 @@
-<!-- Outstanding FCC reqs:
-User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
-
-User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
-
-User Story #7: The .main-section elements should contain at least 5 li items total (not each).  
-
-User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element.
--->
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,43 +9,76 @@ User Story #13: When I click on a navbar element, the page should navigate to th
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <nav id="navbar">
-            <header>topic of tech doc</header>
+        <div class="gridContainer">
+            <nav id="navbar">
+                <header id="navHeader">topic of tech doc</header>
 
-            <!-- do i put the links in a ul as usual or do i choose other solution for nav bar? -->
-            <!-- also - remember to swap the placeholder text in links and swap the links in the href to match the topic of each section -->
-            
-            <a class="nav-link" href="#">text</a>
-            <a class="nav-link" href="#">text2</a>
-            <a class="nav-link" href="#">text3</a>
-            <a class="nav-link" href="#">text4</a>
-            <a class="nav-link" href="#">text5</a>
-            
+                <!-- do i put the links in a ul as usual or do i choose other solution for nav bar? -->
+                <!-- also - remember to swap the placeholder text in links and swap the links in the href to match the topic of each section -->
+                
+                <a class="nav-link" href="#text1">text1</a>
+                <a class="nav-link" href="#text2">text2</a>
+                <a class="nav-link" href="#text3">text3</a>
+                <a class="nav-link" href="#text4">text4</a>
+                <a class="nav-link" href="#text5">text5</a>
+            </nav>
 
-        </nav>
-
-        <main id="main-doc">
+        
             <!-- remember to swap the placeholder ids to match the topic of each section -->
-            <section class="main-section" id="text">
-                <header>text</header>
-            </section>
-            
-            <section class="main-section" id="text2">
-                <header>text2</header>
-            </section>
-            
-            <section class="main-section" id="text3">
-                <header>text3</header>
-            </section>
+            <main id="main-doc">
+                <section class="main-section" id="text1">
+                    <header>text1</header>
+                    <code>this is a code block</code>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </section>
+                
+                <section class="main-section" id="text2">
+                    <header>text2</header>
+                    <code>this is a code block</code>
+                    <ol>
+                        <li>Ranked list</li>
+                        <li>Ranked list</li>
+                        <li>Ranked list</li>
+                        <li>Ranked list</li>
+                        <li>Ranked list</li>
+                    </ol>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </section>
+                
+                <section class="main-section" id="text3">
+                    <header>text3</header>
+                    <code>this is a code block</code>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </section>
 
-            <section class="main-section" id="text4">
-                <header>text4</header>
-            </section>
+                <section class="main-section" id="text4">
+                    <header>text4</header>
+                    <code>this is a code block</code>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </section>
 
-            <section class="main-section" id="text5">
-                <header>text5</header>
-            </section>
-        </main>
+                <section class="main-section" id="text5">
+                    <header>text5</header>
+                    <code>this is a code block</code>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </section>
+            </main>
+        </div>
 
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>

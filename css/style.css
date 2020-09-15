@@ -1,5 +1,6 @@
 /* outstanding FCC reqs:
-User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
+User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left 
+side of the screen and should always be visible to the user.
 
 User Story #15: My Technical Documentation page should use at least one media query. */
 
@@ -10,5 +11,45 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
+/* the nav */
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+#navHeader {
+    grid-area: menu;
+    padding: 1em;
+    font-size: 1.3em;
+}
+
+.nav-link {
+    grid-area: menu;
+    padding: 1em;
+}
+
+
+/* the main */
+
+
+
+#main-doc {
+    grid-area: main;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'menu main main'
+    'menu main main'
+    'menu main main'
+    'menu main main'
+    'menu main main';
+}
+
 
 /* considering using grid for putting navbar on the left */
