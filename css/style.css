@@ -1,40 +1,38 @@
 /* outstanding FCC reqs:
-User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left 
-side of the screen and should always be visible to the user.
-
 User Story #15: My Technical Documentation page should use at least one media query. */
 
 
 /* general style */
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
 /* the nav */
 
 #navbar {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    /* padding: 1em; */
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background: linear-gradient(180deg, rgba(0,45,98,1) 0%, rgba(12,75,148,1) 45%, rgba(0,212,255,1) 100%);
 }
 
 #navHeader {
-    grid-area: menu;
-    padding: 0.5em;
-    font-size: 1.5em;
-    max-width: 100%;
+  grid-area: menu;
+  padding: 0.5em;
+  font-size: 1.5em;
+  max-width: 100%;
+  color: whitesmoke;
 }
 
 .nav-link {
-    grid-area: menu;
-    padding: 1em;
-    text-decoration: none;
-    color: #333333
+  grid-area: menu;
+  padding: 1em;
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 
@@ -42,15 +40,19 @@ body {
 
 header {
   font-size: 1.3em;
-  padding: 1em 0;
+  padding: 0.7em 0;
+  font-weight: bold;
+  color: #0c4b94;
 }
 
 #main-doc {
-    grid-area: main;
+  grid-area: main;
+  margin-top: 1.2em;
 }
 
 .main-section code, p {
-  padding: 0.7em;
+  padding: 0.3em;
+  margin: 0.5em;
 }
 
 .main-section ol {
@@ -58,15 +60,15 @@ header {
 }
 
 .gridContainer {
-    display: grid;
-    grid-template-columns: 200px 5fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 'menu main main'
-    'menu main main'
-    'menu main main'
-    'menu main main'
-    'menu main main';
-    gap: 1em;
+  display: grid;
+  grid-template-columns: 230px 5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'menu main main'
+  'menu main main'
+  'menu main main'
+  'menu main main'
+  'menu main main';
+  gap: 2em;
 }
 
 /* remember to do styling for code block and .indentedLi */
